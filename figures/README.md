@@ -1,5 +1,37 @@
 ### Plots
-1. Surge factor over time (split by route or destination) - DONE
-2. Surge factor vs travel distance (to confirm correlation, and not travel time because price and therefore surge factor is determined beforehand)
-3. Published fare vs ETA and ETT (to check if their payment model still is reasonable even with surges)
-4. Surge factor split by surge notice (dichotomous)
+1. Surge factor over time (split by route or destination, with peaks and dips) - DONE
+2. Surge factor box plot and summary measures - DONE
+3. Surge factor vs travel distance (to confirm correlation, and not travel time because price and therefore surge factor is determined beforehand) - DONE
+4. Published fare vs ETA and ETT (to check if their payment model still is reasonable even with surges)
+5. Surge factor split by surge notice (dichotomous)
+## Insights
+### Notebook 1 
+Let's look at all the average peak and dip times of the surge factor over seven days on each of the routes. 
+
+For Route 1 going to SM North EDSA, the peaks on weekdays tend to be later in the day, while on weekends the graphs tend to be unpredictable in where the dips and peaks will be. Sunday peaked later in the day while Saturday dipped.
+
+For Route 2 going to UP Alumni Hostel, the first three days had consistent peaks around 10 to 15 hours after midnight. The range of surge factors lessened on Saturday and Sunday, but Sunday had one significant peak in the middle of the day. The two days after that had prominent dips but not a lot of peaks.
+
+For Route 3 going to Mall of Asia Arena Coral Way, from Wednesday to Saturday, the graphs seem to be growing exponentially, peaking at times from 16 to 19 hours after midnight. For these days, the dips occured in the morning from 6 to 10 hours after midnight. The last three days had a smaller range of surge factors and more prominent dips than peaks.
+
+For Route 4 going to SM Aura, it is expected to have the same results as Route 1, as they are both malls and it is assumed that higher surge factor means higher demand. For every day except Sunday, the peaks are from 15 to 19 hours after midnight. On Sunday, the surge factor peaks at 12 hours after midnight, probably due to people having lunch at this mall. The highest surge factor so far out of the four routes is seen on Saturday, with a value of 1.77 at 17 hours after midnight.
+
+For Route 5 going to Puregold Paso de Blas, the peaks are usually in the morning from as early as 6 hours after midnight to 12 hours after midnight. This could be because people run errands in the morning. This route also has the lowest peaks out of all the routes.
+
+For Route 6 going to 168 Shopping Mall, the range of surge factors looks fairly low (this will be verified in Notebooks 2). The peak times are unpredictable, either being around 8 or 19 to 21 hours after midnight. 
+
+For Route 7 going to The Medical City Ortigas, the peak times range from 8 to 22 hours after midnight. The hospital can be needed at any time for emergencies, creating unpredictable surge factors. However, it is mostly during the day because of scheduled appointments. On Sunday and Monday, the range of surge factor was noticeably less than the other days.
+
+For Route 8 going to One Orchard Road Eastwood, the peak times are usually in the late afternoon to night, from 16 to 23 hours after midnight. The area might have a popular nightlife. On Sunday, the range of surge factor is very low, the graph is almost a straight line with some distrubances.
+
+For Route 9 going to Victory Liner - Pasay Terminal, the peak times have a very high range. They range from 6 to 22 hours after midnight. These times are usually midday to early afternoon. This is most likely because bus stops run all day and commuting is very common.
+
+For the last route, Route 10 going to Baclaran Church, the peak times range from 0 to 17 hours after midnight. The dip times are mostly always at 8 hours after midnight. The day with the lowest surge factors and the most noticeable dip is Monday, maybe due to people already having gone to church on Sunday.
+
+### Notebook 2
+This is where the box plot and summary statistics about the calculated "Surge factor" can be found. 
+
+Based on the box plot (Figure 2), the route with the highest range is Route 4, but the one with the highest median (since outliers are present) is Route 9. This route has a consistently high surge factor since its standard deviation is low. Route 4 also has the highest 75th percentile, while Route 5 has the lowest. Route 5 has the lowest range and a very low standard deviation. All the values for this route are low, implying low demand in that area (or high supply). 
+
+### Notebook 3 
+
