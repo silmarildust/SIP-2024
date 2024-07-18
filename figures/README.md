@@ -2,7 +2,7 @@
 1. Surge factor over time (split by route or destination, with peaks and dips) - DONE
 2. Surge factor box plot and summary measures - DONE
 3. Surge factor vs travel distance (to confirm correlation, and not travel time because price and therefore surge factor is determined beforehand) - DONE
-4. Published fare vs ETA and ETT (to check if their payment model still is reasonable even with surges)
+4. Surge factor vs ETA and ETT (to check if their payment model still is reasonable even with surges)
 5. Surge factor split by surge notice (dichotomous)
 ## Insights
 ### Notebook 1 
