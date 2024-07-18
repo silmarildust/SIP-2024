@@ -35,3 +35,8 @@ Based on the box plot (Figure 2), the route with the highest range is Route 4, b
 
 ### Notebook 3 
 
+This was made to check the correlation between surge factor and distance of the travel. The correlation coefficient was too low (r = 0.155) so the plots have no significance. The question now is: if their is no correlation between these variables, then what does the surge factor depend on?
+
+### Notebook 4
+
+
