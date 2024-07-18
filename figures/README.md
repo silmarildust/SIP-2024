@@ -4,8 +4,13 @@
 1. Surge factor over time (split by route or destination, with peaks and dips) - DONE
 2. Surge factor box plot and summary measures - DONE
 3. Surge factor vs travel distance (to confirm correlation, and not travel time because price and therefore surge factor is determined beforehand) - DONE
-4. Surge factor vs ETA and ETT (to check if their payment model still is reasonable even with surges)
-5. Surge factor split by surge notice (dichotomous)
+4. Surge factor vs ETA and ETT (to check if their payment model still is reasonable even with surges) - DONE
+6. OVERALL plot of surge factor vs time
+7. Fare and ETA
+8. ETT vs ETA (can put in fig 3)
+9. Surge factor split by surge notice (dichotomous)
+10. LAST: MAKE SEPARATE SPREADSHEETS FOR EACH NOTEBOOK w/ specific data
+
 ## Insights
 ### Notebook 1 
 Let's look at all the average peak and dip times of the surge factor over seven days on each of the routes. 
