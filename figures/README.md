@@ -1,15 +1,15 @@
 ## Introduction
+In February 2024, the Philippine Center for Investigative Journalism (PCIJ) collected data on the prices and process of booking a Grab ride on different routes and times of day. 
 
 ### Plots
 1. Surge factor over time (split by route or destination, with peaks and dips) - DONE
 2. Surge factor box plot and summary measures - DONE
 3. Surge factor vs travel distance (to confirm correlation, and not travel time because price and therefore surge factor is determined beforehand) - DONE
 4. Surge factor vs ETA and ETT (to check if their payment model still is reasonable even with surges) - DONE
-6. OVERALL plot of surge factor vs time
-7. Fare and ETA
-8. ETT vs ETA (can put in fig 3)
-9. Surge factor split by surge notice (dichotomous)
-10. LAST: MAKE SEPARATE SPREADSHEETS FOR EACH NOTEBOOK w/ specific data
+5. OVERALL plot of surge factor vs time - DONE
+7. ETT vs ETA (can put in fig 3) - DONE
+8. Surge factor split by surge notice (dichotomous) 
+9. LAST: MAKE SEPARATE SPREADSHEETS FOR EACH NOTEBOOK w/ specific data
 
 ## Insights
 ### Notebook 1 
@@ -41,9 +41,10 @@ This is where the box plot and summary statistics about the calculated "Surge fa
 Based on the box plot (Figure 2), the route with the highest range is Route 4, but the one with the highest median (since outliers are present) is Route 9. This route has a consistently high surge factor since its standard deviation is low. Route 4 also has the highest 75th percentile, while Route 5 has the lowest. Route 5 has the lowest range and a very low standard deviation. All the values for this route are low, implying low demand in that area (or high supply). 
 
 ### Notebook 3 
-
 This was made to check the correlation between surge factor and distance of the travel. The correlation coefficient was too low (r = 0.155) so the plots have no significance. The question now is: if their is no correlation between these variables, then what does the surge factor depend on?
 
 ### Notebook 4
+The surge factor does not depend on the ETT or ETA, but it has a weak correlation with the published fare. This is because the published fare is one of the factors in calculating for the surge factor. ETT doesn't depend on ETA either.
 
-
+### Notebook 5
+Someone who uses Grab often would want to know at what time is a good time to book a ride. The time with the lowest median surge factor is 9 AM while the highest is 4 PM. 3 PM also has a fairly high median surge factor.  
